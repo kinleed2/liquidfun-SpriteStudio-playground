@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="GameLib">
+      <UniqueIdentifier>{ee392417-13ad-4b81-bf72-118b1af44ea5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameLib\Headers">
+      <UniqueIdentifier>{320023fc-25d4-4a0f-ad29-ec1bcbfdcb13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameLib\Sources">
+      <UniqueIdentifier>{1d72a08b-934f-421b-ad70-9aaf19020d6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameLib\Shaders">
+      <UniqueIdentifier>{f65fe909-758d-4304-8fd6-9ee628d0a827}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Dear ImGui">
+      <UniqueIdentifier>{3303584a-a6b8-4fe8-9db6-5a94c76d5846}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="liquidfun">
+      <UniqueIdentifier>{48a9906f-a7ff-4aee-862a-ef46fd7425bd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameLib\blender.h">
+      <Filter>GameLib\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\debug.h">
+      <Filter>GameLib\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\dxtk_audio.h">
+      <Filter>GameLib\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\font.h">
+      <Filter>GameLib\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\frame_rate.h">
+      <Filter>GameLib\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\game_lib.h">
+      <Filter>GameLib\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\high_resolution_timer.h">
+      <Filter>GameLib\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\input_manager.h">
+      <Filter>GameLib\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\misc.h">
+      <Filter>GameLib\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\obj2d_data.h">
+      <Filter>GameLib\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\primitive.h">
+      <Filter>GameLib\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\resource_manager.h">
+      <Filter>GameLib\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\sprite.h">
+      <Filter>GameLib\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\texture.h">
+      <Filter>GameLib\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\util.h">
+      <Filter>GameLib\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\vector.h">
+      <Filter>GameLib\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\view_settings.h">
+      <Filter>GameLib\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\common.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\game.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\scene.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\title.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\user.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\sprite_data.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\system.h">
+      <Filter>GameLib\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\menu.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\grid.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Dear ImGui\imconfig.h">
+      <Filter>Dear ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dear ImGui\imgui.h">
+      <Filter>Dear ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dear ImGui\imgui_impl_dx11.h">
+      <Filter>Dear ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dear ImGui\imgui_impl_win32.h">
+      <Filter>Dear ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dear ImGui\imgui_internal.h">
+      <Filter>Dear ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dear ImGui\imstb_rectpack.h">
+      <Filter>Dear ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dear ImGui\imstb_textedit.h">
+      <Filter>Dear ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dear ImGui\imstb_truetype.h">
+      <Filter>Dear ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\liquidfun\Pyramid.h">
+      <Filter>liquidfun</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\liquidfun\Test.h">
+      <Filter>liquidfun</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\liquidfun\TestMain.h">
+      <Filter>liquidfun</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\liquidfun\ParticleParameter.h">
+      <Filter>liquidfun</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\liquidfun\Render.h">
+      <Filter>liquidfun</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\liquidfun\AntiPointy.h">
+      <Filter>liquidfun</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\liquidfun\ApplyForce.h">
+      <Filter>liquidfun</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\liquidfun\BodyTypes.h">
+      <Filter>liquidfun</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\liquidfun\Breakable.h">
+      <Filter>liquidfun</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\liquidfun\Bridge.h">
+      <Filter>liquidfun</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\liquidfun\Dominos.h">
+      <Filter>liquidfun</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\liquidfun\Gears.h">
+      <Filter>liquidfun</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\liquidfun\PolyCollision.h">
+      <Filter>liquidfun</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\liquidfun\Car.h">
+      <Filter>liquidfun</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\liquidfun\Bodies.h">
+      <Filter>liquidfun</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\liquidfun\Fixtures.h">
+      <Filter>liquidfun</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\liquidfun\util.h">
+      <Filter>liquidfun</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\SSPlayer\SS6Player.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\SSPlayer\SS6PlayerData.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\SSPlayer\SS6PlayerPlatform.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\SSPlayer\SS6PlayerTypes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\SSPlayer\common\Animator\MersenneTwister.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\SSPlayer\common\Animator\ssplayer_cellmap.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\SSPlayer\common\Animator\ssplayer_effect.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\SSPlayer\common\Animator\ssplayer_effect2.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\SSPlayer\common\Animator\ssplayer_effectfunction.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\SSPlayer\common\Animator\ssplayer_macro.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\SSPlayer\common\Animator\ssplayer_matrix.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\SSPlayer\common\Animator\ssplayer_PartState.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\SSPlayer\common\Animator\xorshift32.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\SSPlayer\common\Helper\DebugPrint.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\SSPlayer\common\Loader\SsEffectBehavior.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\SSPlayer\common\Loader\SsEffectElement.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\SSPlayer\common\Loader\ssloader.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\SSPlayer\common\Loader\ssloader_ssee.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\SSPlayer\common\Loader\sstypes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\obj2d.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\objss6.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\player.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceCode\effect.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GameLib\primitive.hlsli">
+      <Filter>GameLib\Shaders</Filter>
+    </None>
+    <None Include="GameLib\primitive_batch.hlsli">
+      <Filter>GameLib\Shaders</Filter>
+    </None>
+    <None Include="GameLib\sprite.hlsli">
+      <Filter>GameLib\Shaders</Filter>
+    </None>
+    <None Include="GameLib\sprite_batch.hlsli">
+      <Filter>GameLib\Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="GameLib\primitive_batch_ps.hlsl">
+      <Filter>GameLib\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="GameLib\primitive_batch_vs.hlsl">
+      <Filter>GameLib\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="GameLib\primitive_ps.hlsl">
+      <Filter>GameLib\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="GameLib\primitive_vs.hlsl">
+      <Filter>GameLib\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="GameLib\sprite_batch_ps.hlsl">
+      <Filter>GameLib\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="GameLib\sprite_batch_vs.hlsl">
+      <Filter>GameLib\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="GameLib\sprite_ps.hlsl">
+      <Filter>GameLib\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="GameLib\sprite_vs.hlsl">
+      <Filter>GameLib\Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameLib\view_settings.cpp">
+      <Filter>GameLib\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\vector.cpp">
+      <Filter>GameLib\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\texture.cpp">
+      <Filter>GameLib\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\sprite.cpp">
+      <Filter>GameLib\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\resource_manager.cpp">
+      <Filter>GameLib\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\primitive.cpp">
+      <Filter>GameLib\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\obj2d_data.cpp">
+      <Filter>GameLib\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\input_manager.cpp">
+      <Filter>GameLib\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\game_lib.cpp">
+      <Filter>GameLib\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\frame_rate.cpp">
+      <Filter>GameLib\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\font.cpp">
+      <Filter>GameLib\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\dxtk_audio.cpp">
+      <Filter>GameLib\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\debug.cpp">
+      <Filter>GameLib\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\game.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\main.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\scene.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\title.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\sprite_data.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\wnd_proc.cpp">
+      <Filter>GameLib\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\menu.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\grid.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Dear ImGui\imgui.cpp">
+      <Filter>Dear ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dear ImGui\imgui_demo.cpp">
+      <Filter>Dear ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dear ImGui\imgui_draw.cpp">
+      <Filter>Dear ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dear ImGui\imgui_impl_dx11.cpp">
+      <Filter>Dear ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dear ImGui\imgui_impl_win32.cpp">
+      <Filter>Dear ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dear ImGui\imgui_tables.cpp">
+      <Filter>Dear ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dear ImGui\imgui_widgets.cpp">
+      <Filter>Dear ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dear ImGui\imgui_ja_gryph_ranges.cpp">
+      <Filter>Dear ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\liquidfun\Test.cpp">
+      <Filter>liquidfun</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\liquidfun\TestMain.cpp">
+      <Filter>liquidfun</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\liquidfun\ParticleParameter.cpp">
+      <Filter>liquidfun</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\liquidfun\Render.cpp">
+      <Filter>liquidfun</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\SSPlayer\SS6Player.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\SSPlayer\SS6PlayerPlatform.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\SSPlayer\common\Animator\ssplayer_effect.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\SSPlayer\common\Animator\ssplayer_effect2.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\SSPlayer\common\Animator\ssplayer_effectfunction.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\SSPlayer\common\Animator\ssplayer_matrix.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\SSPlayer\common\Animator\ssplayer_PartState.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\SSPlayer\common\Helper\DebugPrint.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\objss6.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\player.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\effect.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
