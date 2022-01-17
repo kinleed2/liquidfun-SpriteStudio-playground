@@ -97,7 +97,7 @@ void Game::update()
         return;
     }
 
-    // ポーズ処理
+    // ポーズ処理l
     if (TRG(0) & PAD_START)
     {
         isPaused_ = !isPaused_;         // 0コンのスタートボタンが押されたらポーズ状態が反転
