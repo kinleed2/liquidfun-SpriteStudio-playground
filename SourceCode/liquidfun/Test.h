@@ -160,7 +160,7 @@ public:
 	virtual ~Test();
 
 	void DrawTitle(const char* string);
-	virtual void Step(Settings* settings);
+	virtual void Step(Settings* settings, bool draw = true);
 	virtual void Keyboard(unsigned char key) { B2_NOT_USED(key); }
 	virtual void KeyboardUp(unsigned char key) { B2_NOT_USED(key); }
 	void ShiftMouseDown(const b2Vec2& p);

@@ -255,6 +255,9 @@
     <ClInclude Include="SourceCode\effect.h">
       <Filter>Headers</Filter>
     </ClInclude>
+    <ClInclude Include="SourceCode\block.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="GameLib\primitive.hlsli">
@@ -427,6 +430,9 @@
       <Filter>Sources</Filter>
     </ClCompile>
     <ClCompile Include="SourceCode\effect.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceCode\block.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
   </ItemGroup>

@@ -15,7 +15,8 @@
 enum TEXNO
 {
     BUTTON, 
-    BLOB_PARTICLE, 
+    BLOB_PARTICLE,
+    BLOCK
 };
 
 extern GameLib::LoadTexture loadTexture[];

@@ -18,6 +18,7 @@ using namespace GameLib;
 LoadTexture loadTexture[] = {
     { TEXNO::BUTTON,        L"./Data/Images/button.png",    1U      }, 
     { TEXNO::BLOB_PARTICLE, L"./Data/Images/blob.png",      2048U   },
+    { TEXNO::BLOCK,L"./Data/Images/block(2x1).png",64U },
     { -1, nullptr }	// èIóπÉtÉâÉO
 };
 

@@ -14,6 +14,7 @@
 #include "../Dear ImGui/imgui_impl_win32.h"
 #include "../Dear ImGui/imgui_impl_dx11.h"
 #include "effect.h"
+#include "block.h"
 
 //------< using >---------------------------------------------------------------
 using namespace GameLib;
@@ -57,7 +58,7 @@ void Game::deinit()
     // 音楽のクリア
     music::clear();
     EffectManager::instance().clear();
-
+    BlockManager::instance().clear();
 
     {
         b2Body* b = m_world->GetBodyList();
@@ -122,10 +123,10 @@ void Game::update()
     switch (state_)
     {
     case 0:
-        //////// 初期設定 ////////
+        //////// game start setting ////////
         view::init();
-        view::setScale(0.167f);
-        view::setCenter(0, 0);
+        view::setScale(0.3f);
+        view::setCenter(view::box2dToWorld(b2Vec2(0, 10)));
 
         m_world->SetGravity(b2Vec2(0, -30));
         
@@ -141,7 +142,12 @@ void Game::update()
         player_ = new Player();
         player_->init("character_template_3head/walk", b2Vec2(-20, 5));
 
-        // Pyramid
+
+        for (int i = 0; i < 10; ++i)
+        {
+            BlockManager::instance().add(b2Vec2(-10, 1 + i * 2), b2Vec2(2, 1));
+        }
+        // set ground
         {
             b2BodyDef bd;
             b2Body* ground = m_world->CreateBody(&bd);
@@ -151,48 +157,18 @@ void Game::update()
             ground->CreateFixture(&shape, 0.0f);
         }
 
-        {
-            float32 a = 0.5f;
-            b2PolygonShape shape;
-            shape.SetAsBox(a, a);
+        state_++;    // move to game update
 
-            b2Vec2 x(-7.0f, 0.75f);
-            b2Vec2 y;
-            b2Vec2 deltaX(0.5625f, 1.25f);
-            b2Vec2 deltaY(1.125f, 0.0f);
-
-            for (int32 i = 0; i < e_count; ++i)
-            {
-                y = x;
-
-                for (int32 j = i; j < e_count; ++j)
-                {
-                    b2BodyDef bd;
-                    bd.type = b2_dynamicBody;
-                    bd.position = y;
-                    b2Body* body = m_world->CreateBody(&bd);
-                    body->CreateFixture(&shape, 5.0f);
-
-                    y += deltaY;
-                }
-
-                x += deltaX;
-            }
-        }
-
-        state_++;    // 初期設定処理の終了
-
-              /*  if (func_)
-            test_ = func_();*/
-
-            /*fallthrough*/
     case 1:
-        //////// 通常時の処理 ////////
+        //////// game update ////////
         scroll();
 
         if (player_)player_->update();
-        
+
+        BlockManager::instance().update();
         EffectManager::instance().update();
+
+        Step(&settings_, false);
 
         timer_++;
 
@@ -227,7 +203,9 @@ void Game::draw()
     //    test_->Step(&settings_);
 
     Step(&settings_);
-    
+
+    BlockManager::instance().draw();
+
     if (player_)player_->draw();
     
     EffectManager::instance().draw();

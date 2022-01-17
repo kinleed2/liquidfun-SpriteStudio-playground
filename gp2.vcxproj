@@ -184,6 +184,7 @@
     <ClInclude Include="GameLib\util.h" />
     <ClInclude Include="GameLib\vector.h" />
     <ClInclude Include="GameLib\view_settings.h" />
+    <ClInclude Include="SourceCode\block.h" />
     <ClInclude Include="SourceCode\common.h" />
     <ClInclude Include="SourceCode\effect.h" />
     <ClInclude Include="SourceCode\game.h" />
@@ -345,6 +346,7 @@
     <ClCompile Include="GameLib\vector.cpp" />
     <ClCompile Include="GameLib\view_settings.cpp" />
     <ClCompile Include="GameLib\wnd_proc.cpp" />
+    <ClCompile Include="SourceCode\block.cpp" />
     <ClCompile Include="SourceCode\effect.cpp" />
     <ClCompile Include="SourceCode\game.cpp" />
     <ClCompile Include="SourceCode\grid.cpp" />

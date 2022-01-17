@@ -64,7 +64,8 @@ void Player::update()
 
     if (STATE(0) & PAD_UP && remainingJumpSteps == 0)
     {
-        remainingJumpSteps = 6;
+        vel.y = 10;//upwards - don't change x velocity
+        remainingJumpSteps = 60;
     }
 
 
@@ -73,7 +74,6 @@ void Player::update()
 
     if (remainingJumpSteps > 0)
     {
-        body_->ApplyForce(b2Vec2(0, 1500), body_->GetWorldCenter(), false);
         remainingJumpSteps--;
 
     }
@@ -84,6 +84,14 @@ void Player::update()
     OBJSS6::update();
 
     ss_player->update(1.0f / 60.f);
+
+    {
+        using namespace GameLib;
+        b2Vec2 centerPos = view::worldToBox2d(view::getCenter());
+        centerPos.x = (std::min)(position_.x + 10, centerPos.x);
+        centerPos.x = (std::max)(position_.x - 10, centerPos.x);
+        view::setCenter(view::box2dToWorld(centerPos));
+    }
 }
 
 

@@ -83,13 +83,25 @@ public:
         body->CreateFixture(myFixtureDef);
     }
 
-    static void AddBoxFixture(b2Body* body, b2Vec2 pos/*relative to body position*/, b2Vec2 box_size, b2FixtureDef* myFixtureDef)
+    static void AddBoxFixture(b2Body* body, b2Vec2 pos/*relative to body position*/, b2Vec2 box_size, 
+        b2FixtureDef* fixtureDef = nullptr)
     {
 
         b2PolygonShape polygon_shape;
         polygon_shape.SetAsBox(box_size.x, box_size.y,pos,0);
-        myFixtureDef->shape = &polygon_shape;
-        body->CreateFixture(myFixtureDef);
+
+        b2FixtureDef myFixtureDef;
+        if (fixtureDef)
+        {
+            myFixtureDef = *fixtureDef;
+        }
+        else
+        {
+            myFixtureDef.density = 1;
+        }
+        myFixtureDef.shape = &polygon_shape;
+
+        body->CreateFixture(&myFixtureDef);
 
     }
 

@@ -341,7 +341,7 @@ void Test::LaunchBomb(const b2Vec2& position, const b2Vec2& velocity)
 	m_bomb->CreateFixture(&fd);
 }
 
-void Test::Step(Settings* settings)
+void Test::Step(Settings* settings, bool draw)
 {
 	float32 timeStep = settings->hz > 0.0f ? 1.0f / settings->hz : float32(0.0f);
 	m_textLine = 0;
@@ -382,6 +382,11 @@ void Test::Step(Settings* settings)
 		settings->positionIterations,
 		settings->particleIterations);
 	settings->stepTimeOut = timer.GetMilliseconds();
+
+    if (!draw)
+    {
+        return;
+    }
 
 	m_world->DrawDebugData();
 
